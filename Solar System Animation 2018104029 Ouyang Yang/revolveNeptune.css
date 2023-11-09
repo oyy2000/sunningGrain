@@ -1,0 +1,40 @@
+#Neptune{
+	background:url(img/Neptune.jpg) repeat-x 0 0;
+	background-size:200%;
+
+	position:absolute;
+  width: 4vw;
+  height:4vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+	
+	animation: 
+    	nudge 15s linear infinite ,
+			animXNeptune 30s cubic-bezier(0.36,0,0.64,1) -15s infinite alternate, animYNeptune 30s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+}
+
+
+#lopp8 {
+	width: 87.5vw;
+	height:27vw;
+	border: 0.2vw dashed #999;
+	border-radius: 50%;
+	position: absolute;
+	left: 6.25vw;
+	top: 9vw;
+}
+@keyframes animXNeptune{
+	 0% {left: 91.75vw;}
+	 100% {left: 4.25vw;}
+	
+}
+@keyframes animYNeptune{
+	 0% {top: 7vw;z-index: 0;height: 3vw;
+	 width: 3vw;}
+	 100% {top: 34vw;}
+}
+
+

@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/move-top.js"></script>
+	<script src ="js/easing.js"></script>
+	<!--Animation-->
+	<script src="js/wow.min.js"></script>
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<script>
+		new WOW().init();
+	</script>
+	<!---/End-Animation---->
+
+
+</head>
+<body>
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+	body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color:#000;
+		margin: 0;
+		padding: 0;
+	}
+	.swiper-wrapper{
+		transition-delay:.3s;
+	}
+	.swiper-container {
+		width: 100vw;
+		height: 56.25vw;
+	}
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.swiper-slide:nth-child(2){
+		background:#3183ff;
+		color:#fff;}
+	.swiper-slide p{
+		transform:translateX(-200px);
+		opacity:0;
+		transition:all .4s;}
+	.ani-slide p{
+		transform:translateX(0);
+		opacity:1;
+	}
+
+	video{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+
+		/*加滤镜*/
+		/*filter: blur(15px); //背景模糊设置 */
+		/*-webkit-filter: grayscale(100%);*/
+		/*filter:grayscale(100%); //背景灰度设置*/
+	}
+
+	.mytext1{
+		z-index: 2;
+		color: white;
+		text-align: left;
+		position: absolute;
+		left: 22%;
+		top: 40%;
+		transform: translate(-50%,-50%);/* 居中 */
+
+	}
+	.mytext2{
+		z-index: 2;
+		color: white;
+		text-align: left;
+		position: absolute;
+		left: 69%;
+		top: 50%;
+		transform: translate(-50%,-50%);/* 居中 */
+
+	}
+	.mytext3{
+		z-index: 2;
+		color: white;
+		text-align: left;
+		position: absolute;
+		left: 32%;
+		top: 30%;
+		transform: translate(-50%,-50%);/* 居中 */
+	}
+</style>
+
+<div class="header" style="min-height: 200px; background: url('images/barley-field.jpg');background-size: 100%"">
+
+	<div class="swiper-container wow zoomInLeft animated" data-wow-delay="0.4s" >
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" >
+				<ul class="mytext1">
+					<span  style="font-family: calisto mt;font-size: 2vw;"><b>Best Raw Materials</b></span>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● We select the best grain around the world<br> even somewhere you never thought about</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Raw materials are screened layer by layer</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Sterilized by steam under high pressure</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;"><a style="color:red" href="#contents">To Bottom</a></p>
+				</ul>
+				<video src="images/best%20material.mp4" loop muted  autoplay="autoplay">
+
+				</video>
+			</div>
+			<div class="swiper-slide ">
+				<video autoplay loop muted>
+					<source src="images/Transport.mp4"> </source>
+				</video>
+				<ul class="mytext2">
+					<span  style="font-family: calisto mt;font-size: 2vw;"><b>Rapid Transportation</b></span>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Grain is packed locally and transported to the nearest<br> transportation hub in shortest time</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Important products are transported by aircraft</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Calculate the most suitable path to <br>deliver grain to users through algorithm</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;"><a style="color:red" href="#contents">To Bottom</a></p>
+				</ul>
+			</div>
+			<div class="swiper-slide">
+				<video autoplay loop muted>
+					<source src="images/Earth.mp4"> </source>
+				</video>
+				<ul class="mytext3">
+					<span  style="font-family: calisto mt;font-size: 2vw;"><b>Worldwide Company</b></span>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Set up warehouses in several important<br> grain producing countries</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● We are highly internationalized company</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;">● Excellent localization strategy</p>
+					<p style="font-size: 1.5vw; font-family: century gothic;"><a style="color:red" href="#contents">To Bottom</a></p>
+				</ul>
+			</div>
+
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+
+</div>
+
+
+
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container',{
+		direction : 'vertical',
+		followFinger : false,
+		speed:800,
+		mousewheel: true,
+		pagination : {
+			el:'.swiper-pagination',
+		},
+		on:{
+			init:function(swiper){
+				slide=this.slides.eq(0);
+				slide.addClass('ani-slide');
+			},
+			transitionStart: function(){
+				for(i=0;i<this.slides.length;i++){
+					slide=this.slides.eq(i);
+					slide.removeClass('ani-slide');
+				}
+			},
+			transitionEnd: function(){
+				slide=this.slides.eq(this.activeIndex);
+				slide.addClass('ani-slide');
+
+			},
+		}
+	});
+
+</script>
+
+
+
+</div><!--main content-->
+
+
+<div class="categories-section" id="contents">
+	<div class="container">
+
+
+		<div class="col-md-8 contact-map  wow bounceIn animated " data-wow-delay="0.4s">
+			<iframe src="map.html"> </iframe>
+		</div>
+
+
+		<div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" >
+			<a href="contact.html"style="text-decoration: none;"><h3>Contact</h3></a>
+			<ul>
+				<li><i class="phone"></i></li>
+				<li><p>133-444-53508</p>
+					<p>028-8170-5350</p></li>
+			</ul>
+			<ul>
+				<li><i class="smartphone"></i></li>
+				<li><p>Nanhai Avenue</p>
+					<p>Shenzhen University</p></li>
+			</ul>
+			<ul>
+				<li><i class="message"></i></li>
+				<li><a href="#">888222555@qq.com</a>
+					<a href="#">oyy200000@163.com</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+
+
+
+<div class="footer-section">
+	<div class="container">
+		<div class="footer-top">
+			<div class="social-icons  bounceInLeft wow animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<a href="#"><i class="icon3"></i></a>
+				<a href="#"><i class="icon4"></i></a>
+			</div>
+		</div>
+
+
+		<div class="fadeInDown wow animated" data-wow-delay="0.4s">
+			<div class="bottom-menu">
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="about.html" class="active">About</a></li>
+					<li><a href="products.php">Products</a></li>
+					<li><a href="login.php">Login</a></li>
+					<li><a href="register.php">Register</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="logout.php">Logout</a></li>
+				</ul>
+			</div><!--Bottom Menu-->
+		</div>
+		<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" >
+			<p>Copyright &copy; 2019.SunnyGrain All rights reserved.</p>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" > </span></a> <!--TO top-->
+		<script>$('body,html').animate({scrollTop:0},500);</script>
+	</div>
+</div>
+
+</body>
+</html>

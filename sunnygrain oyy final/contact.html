@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src ="js/easing.js"></script>
+    <!--Animation-->
+    <script src="js/wow.min.js"></script>
+    <link href="css/animate.css" rel='stylesheet' type='text/css' />
+    <script>
+        new WOW().init();
+    </script>
+    <!---/End-Animation---->
+
+
+</head>
+<body>
+
+<div class="header head-top " id="home" style="background: url('images/contact3.jpg') ;background-size: cover">
+    <div class="container">
+        <div class="header-top clearfix" >
+            <div class="top-menu">
+                <span class="menu"><img src="images/nav.png" alt=""/> </span>
+
+                <ul>
+                    <li><a href="index.html" >Home</a></li><label>/</label>
+                    <li><a href="about.html">About</a></li><label>/</label>
+                    <li><a href="products.php">Products</a></li><label>/</label>
+                    <li><a href="contact.html" class="active">Contact</a></li><label>/</label>
+                    <li><a href="login.php">Login</a></li><label>/</label>
+                    <li><a href="register.php">Register</a></li><label>/</label>
+
+                    <li><a href="logout.php">Logout</a></li>
+
+                </ul>
+
+                <!-- script for menu -->
+                <script>
+                    $("span.menu").click(function(){
+                        $(".top-menu ul").slideToggle("slow" , function(){
+                        });
+                    });
+                </script>
+                <!-- //script for menu -->
+
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+                    <input type="submit" value="">
+                </form>
+            </div>
+
+        </div>
+        <div class="logo wow bounceInLeft animated" data-wow-delay="0.4s" >
+            <a href="index.html" >SunnyGrain</a>
+        </div>
+
+    </div><!--container-->
+</div><!--header-->
+
+
+<div class="container-fluid" style="background: url('images/contact.jpg')no-repeat 0 0 fixed; background-size: cover;opacity: 1">
+
+
+            <div class="contact" style="width: 60%;align-content: center;margin-left: 20%">
+                <div class="contact-head text-center wow bounceInDown animated ">
+                    <h3>Contact us</h3>
+                </div>
+                <!----- contact-grids ----->
+                <div class="contact-grids">
+                    <!----- contact-form ------>
+                    <div class="contact-form wow bounceInRight animated" data-wow-delay="0.4s">
+                        <form action = "upload.php" method="get">
+                            <div class="contact-form-row">
+                                <div>
+                                    <span>Name :</span>
+                                    <input type="text" class="text" value="" name="Name">
+                                </div>
+                                <div>
+                                    <span>Email :</span>
+                                    <input type="text" class="text" value="" name="Email">
+                                </div>
+                                <div>
+                                    <span>Subject :</span>
+                                    <input type="text" class="text" value="" name="Subject">
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                            <div class="contact-form-row2 wow rotateInDownLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                                <span>Message :</span>
+                                <textarea name="Content" type="text"> </textarea>
+                            </div>
+                            <input type="submit" value="send">
+
+                        </form>
+                    </div>
+                    <!----- contact-form ------>
+                </div>
+                <!----- contact-grids ----->
+            </div>
+
+
+</div><!--main content-->
+
+
+<div class="categories-section">
+    <div class="container">
+
+
+        <div class="col-md-8 contact-map  wow bounceIn animated " data-wow-delay="0.4s">
+            <iframe src="map.html"> </iframe>
+        </div>
+
+
+        <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" >
+            <h3>contact</h3>
+            <ul>
+                <li><i class="phone"></i></li>
+                <li><p>133-444-53508</p>
+                    <p>028-8170-5350</p></li>
+            </ul>
+            <ul>
+                <li><i class="smartphone"></i></li>
+                <li><p>Nanhai Avenue</p>
+                    <p>Shenzhen University</p></li>
+            </ul>
+            <ul>
+                <li><i class="message"></i></li>
+                <li><a href="#">888222555@qq.com</a>
+                    <a href="#">oyy200000@163.com</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+            <div class="social-icons  bounceInLeft wow animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                <a href="#"><i class="icon1"></i></a>
+                <a href="#"><i class="icon2"></i></a>
+                <a href="#"><i class="icon3"></i></a>
+                <a href="#"><i class="icon4"></i></a>
+            </div>
+        </div>
+
+
+        <div class="fadeInDown wow animated" data-wow-delay="0.4s">
+            <div class="bottom-menu">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Register</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </div><!--Bottom Menu-->
+        </div>
+        <div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" >
+            <p>Copyright &copy; 2019.SunnyGrain All rights reserved.</p>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" > </span></a> <!--TO top-->
+        <script>$('body,html').animate({scrollTop:0},500);</script>
+
+        <script type="text/javascript">
+            function success () {
+                alert("Add success!");
+            }
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

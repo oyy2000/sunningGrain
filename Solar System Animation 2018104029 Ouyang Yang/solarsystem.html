@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欧阳洋Ouyang Yang2018104029</title>
+<link rel="stylesheet" type="text/css" href="revolveEarth.css">
+<link rel="stylesheet" type="text/css" href="revolveMercury.css">
+<link rel="stylesheet" type="text/css" href="revolveVenus.css">
+<link rel="stylesheet" type="text/css" href="revolveMars.css">
+<link rel="stylesheet" type="text/css" href="revolveJupiter.css">
+<link rel="stylesheet" type="text/css" href="revolveSaturn.css">
+<link rel="stylesheet" type="text/css" href="revolveNeptune.css">
+<link rel="stylesheet" type="text/css" href="revolveUranus.css">
+<script src="change.js"></script>
+</head>
+<body>
+	
+ <div class="sun"></div>  
+ </div>  
+<div id="lopp1"></div>
+ <div id="Mercury">
+	 <p>Mercury</p>
+	 <p style="font-size:1.5vw">47.89km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+ <div id="Venus">
+	 <p>Venus</p>
+	 <p style="font-size:1.5vw">35.03km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+ <div id="lopp2"></div>
+<div id="Earth">
+	<p>Earth</p>
+    <p style="font-size:1.5vw">29.78km/s</p>
+    <p style="font-size:0.8vw">Orbit Velocity</p>
+    <div id="moon"></div>
+</div>
+ <div id="lopp3"></div> 
+ <div id="Mars">
+	 <p>Mars</p>
+	 <p style="font-size:1.5vw">24.13km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+<div id="lopp4"></div> 
+ <div id="Jupiter">
+	 <p>Jupiter</p>
+	 <p style="font-size:1.5vw">13.06km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+<div id="lopp5"></div> 
+
+ <div id="Saturn">
+	 <p>Saturn</p>
+	 <p style="font-size:1.5vw">9.64km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+	  <div id="saturn-ring-1"></div>
+ </div>
+<div id="lopp6"></div> 
+
+ <div id="Uranus">
+	 <p>Uranus</p>
+	 <p style="font-size:1.5vw">6.81km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+<div id="lopp7"></div> 
+ <div id="Neptune">
+	 <p>Neptune</p>
+	 <p style="font-size:1.5vw">5.43km/s</p>
+	 <p style="font-size:0.8vw">Orbit Velocity</p>
+ </div> 
+<div id="lopp8"></div> 
+
+
+<style type="text/css">
+	ul{
+		margin: 0 ;
+		padding: 0;
+	}
+nav{
+	width: 10vw;	
+	margin: 0 ;
+	padding: 0;
+	background: #ccc;
+}
+
+.list ul li{
+	list-style-type: none; 
+}
+.list ul li a{
+    text-align: center;
+	text-decoration: none;
+
+	 background:#333;
+	color: whitesmoke;
+	display: block;
+	padding: 3px 10px;
+}
+.list ul li a:hover{
+	color: black;
+	background: #666;
+	cursor: pointer;   
+}
+ </style>
+		<nav class="list">		
+			<ul>
+				<li ><a onclick="changeMercury()" id="#Mercury" style="font-size: 1vw;">Hide Mercury</a></li>
+				<li><a onclick="changeVenus()" id="#Venus" style="font-size: 1vw;">Hide Venus</a></li>
+				<li ><a onclick="changeEarth()" id="#Earth" style="font-size: 1vw;">Hide Earth</a></li>
+				<li><a onclick="changeMars()" id="#Mars" style="font-size: 1vw;">Hide Mars</a></li>
+				<li ><a onclick="changeJupiter()" id="#Jupiter" style="font-size: 1vw;">Hide Jupiter</a></li>
+				<li><a onclick="changeSaturn()" id="#Saturn" style="font-size: 1vw;">Hide Saturn</a></li>
+				<li ><a onclick="changeUranus()" id="#Uranus" style="font-size: 1vw;">Hide Uranus</a></li>
+				<li><a onclick="changeNeptune()" id="#Neptune" style="font-size: 1vw;">Hide Neptune</a></li>
+				<li><a onclick="Clear()" id="Clear" style="font-size: 1vw;">Clear</a></li>
+			</ul>
+		</nav>	
+ 
+</body>
+
+
+</html>

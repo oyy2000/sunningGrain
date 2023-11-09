@@ -1,0 +1,105 @@
+#Mars{
+	background:url(img/Mars.jpg) repeat-x 0 0;
+	background-size:200%;
+
+	position:absolute;
+  width: 2vw;
+  height:2vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+	
+	animation: 
+    	nudge 25s linear infinite ,
+		animXMars 6s cubic-bezier(0.36,0,0.64,1) -3s infinite alternate, animYMars 6s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+	
+}
+
+#lopp4 {
+	width: 27.5vw;
+	height:11vw;
+	border: 0.2vw dashed #999;
+	border-radius: 50%;
+	position: absolute;
+	left: 36.75vw;
+	top: 17vw;
+}
+@keyframes animXMars{
+	 0% {left: 63.25vw;}
+	 100% {left: 35.75vw;}
+	
+}
+@keyframes animYMars{
+	 0% {top: 16vw;z-index: 0;
+	 }
+	 100% {top: 27vw;height: 2.3vw;
+	 width: 2.3vw;}
+}
+ 
+/* @keyframes revolveMars{
+  0%{
+    transform: translate(0, 0);
+  }
+	5%{
+		  transform: translate(4vw, 3.6vw);
+		}
+		10%{
+			transform: translate(8vw,4vw);
+		}
+		15%{
+			transform: translate(12vw , 3.6vw);
+		}
+		20%{
+			transform: translate(16vw , 2.7vw);
+		}
+	25%{
+			transform: translate(20vw , 1.5vw);
+		}
+		
+		30%{
+			transform: translate(24vw , 0vw);
+		}
+			35%{
+			transform: translate(28vw , -2.2vw);
+		}
+		40%{
+			transform: translate(32vw , -4.9vw);
+		}
+		45%{
+			transform: translate(36vw , -9vw);
+		}
+		50%{
+			transform: translate(36vw , -13vw);
+		}
+		55%{
+			transform: translate(33vw , -16vw);
+		}
+		60%{
+			transform: translate(30vw , -15.5vw);
+		}
+		65%{
+			transform: translate(26vw , -15.4vw);
+		}
+		70%{
+			transform: translate(22vw , -15vw);
+		}
+		
+		75%{
+			transform: translate(18vw , -14vw);
+		}
+		
+		80%{
+			transform: translate(14vw , -12.5vw);
+		}	
+		85%{
+			transform: translate(10vw , -11vw);
+		}
+			90%{
+			transform: translate(6vw , -9vw);
+		}
+			95%{
+			transform: translate(2vw , -6vw);
+		}
+		} */

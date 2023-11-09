@@ -1,0 +1,114 @@
+#Jupiter{
+	background:url(img/Jupiter.jpg) repeat-x 0 0;
+	background-size:200%;
+
+	position:absolute;
+  width: 8vw;
+  height:8vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+	
+	animation: 
+    	nudge 10s linear infinite ,
+		animXJupiter 13s cubic-bezier(0.36,0,0.64,1) -6.5s infinite alternate, animYJupiter 13s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+}
+
+
+#lopp5 {
+	width: 37.5vw;
+	height:15vw;
+	border: 0.2vw dashed #999;
+	border-radius: 50%;
+	position: absolute;
+	left: 31.25vw;
+	top: 15vw;
+}
+@keyframes animXJupiter{
+	 0% {left: 64.75vw;}
+	 
+	 100% {left: 27.25vw;}
+	
+}
+@keyframes animYJupiter{
+	 0% {top: 11vw;z-index: 0;
+	  height: 6vw;
+	 width: 6vw;}
+	 100% {top: 26vw;
+	
+	 }
+}
+
+
+
+
+
+/* 
+@keyframes revolveJupiter{
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+	5%{
+		  transform: translate(5.2vw, 4.68vw);
+		}
+		10%{
+			transform: translate(10.4vw,5.2vw);
+		}
+		15%{
+			transform: translate(15.6vw , 4.68vw);
+		}
+		20%{
+			transform: translate(16vw , 2.7vw);
+		}
+	25%{
+			transform: translate(20vw , 1.5vw);
+		}
+		
+		30%{
+			transform: translate(24vw , 0vw);
+		}
+			35%{
+			transform: translate(28vw , -2.2vw);
+		}
+		40%{
+			transform: translate(32vw , -4.9vw);
+		}
+		45%{
+			transform: translate(36vw , -9vw);
+		}
+		50%{
+			transform: translate(36vw , -13vw);
+		}
+		55%{
+			transform: translate(33vw , -16vw);
+		}
+		60%{
+			transform: translate(30vw , -15.5vw);
+		}
+		65%{
+			transform: translate(26vw , -15.4vw);
+		}
+		70%{
+			transform: translate(22vw , -15vw);
+		}
+		
+		75%{
+			transform: translate(18vw , -14vw);
+		}
+		
+		80%{
+			transform: translate(14vw , -12.5vw);
+		}	
+		85%{
+			transform: translate(10vw , -11vw);
+		}
+			90%{
+			transform: translate(6vw , -9vw);
+		}
+			95%{
+			transform: translate(2vw , -6vw);
+		}
+}
+ */

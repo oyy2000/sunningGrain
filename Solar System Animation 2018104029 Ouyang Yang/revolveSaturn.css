@@ -1,0 +1,51 @@
+#Saturn{
+	background:url(img/Saturn.jpg) repeat-x 0 0;
+	background-size:200%;
+	position:absolute;
+  width: 6vw;
+  height:6vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+	
+	animation: 
+    	nudge 10s linear infinite ,
+			animXSaturn 15s cubic-bezier(0.36,0,0.64,1) -7.5s infinite alternate, animYSaturn 15s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+}
+
+#lopp6 {
+	width: 47.5vw;
+	height:19vw;
+	border: 0.2vw dashed #999;
+	border-radius: 50%;
+	position: absolute;
+	left: 26.25vw;
+	top: 13vw;
+}
+
+#saturn-ring-1 {
+            height: 4vw;
+            width:10vw;
+            border-color: rgb(184,186,164);
+            border-width:  0 1vw  1vw 1vw;
+			border-style: solid;
+            border-radius: 50%;
+	
+			margin-left:-3vw;
+			margin-top: -4.5vw ;
+
+		}
+        
+@keyframes animXSaturn{
+	 0% {left: 70.75vw;}
+	 100% {left: 23.25vw;}
+	
+}
+@keyframes animYSaturn{
+	 0% {top: 10vw;z-index: 0;height: 5.6vw;
+	 width: 5.6vw;}
+	 100% {top: 29vw;}
+}
+

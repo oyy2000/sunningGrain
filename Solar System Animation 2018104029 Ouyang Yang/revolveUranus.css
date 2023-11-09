@@ -1,0 +1,39 @@
+#Uranus{
+	background:url(img/Uranus.jpg) repeat-x 0 0;
+	background-size:200%;
+
+	position:absolute;
+  width: 4vw;
+  height:4vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+	
+	animation: 
+    	nudge2 17s linear infinite ,
+			animXUranus 20s cubic-bezier(0.36,0,0.64,1) -10s infinite alternate, animYUranus 20s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+}
+
+
+#lopp7 {
+	width: 67.5vw;
+	height:23vw;
+	border: 0.2vw dashed #999;
+	border-radius: 50%;
+	position: absolute;
+	left: 16.25vw;
+	top: 11vw;
+}
+@keyframes animXUranus{
+	 0% {left: 81.75vw;}
+	 100% {left: 14.25vw;}
+}
+@keyframes animYUranus{
+	 0% {top: 9vw;z-index: 0;height: 3vw;
+	 width: 3vw;}
+	 100% {top: 32vw;}
+}
+
+

@@ -1,0 +1,85 @@
+#Mercury{
+	background:url(img/Mercury.jpg) repeat-x 0 0;
+	background-size:200%;
+	position:absolute;
+  width:1.3vw;
+  height:1.3vw;
+	z-index:200;
+	border:0.5px solid rgba(26,18,101,0.3);
+	border-radius: 100%;
+	box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+	14px rgba(256,256,256,0.5) inset;
+
+	animation: 
+    	nudge 150s linear infinite ,
+		animXMercury 1s cubic-bezier(0.36,0,0.64,1) -0.5s infinite alternate, animYMercury 1s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+
+}
+#lopp1 {
+	width: 12.5vw;
+	height:5vw;
+	border: 0.2vw dashed #999;
+	border-width:  0 0.2vw  0.2vw 0.2vw;
+	z-index: 100;
+	border-radius: 50%;
+	position: absolute;
+	left: 43.75vw;
+	top: 20vw;
+
+}
+@keyframes animXMercury{
+	 0% {left: 55.6vw;
+
+	 }
+	 100% {left: 43.1vw;}
+	
+}
+@keyframes animYMercury{
+	 0% {top: 19.35vw;z-index: 0;	
+	}
+	 100% {top: 24.35vw; 
+	  height: 1.7vw;
+	 width: 1.7vw;}
+}
+ 
+
+/* 
+@keyframes revolveMercury{
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+	5%{
+		 transform: translate(1.5vw, 1vw);
+		 
+	}
+  25% {
+    transform: translate(8vw,0);
+	
+  }
+	40%{
+		 transform: translate(12.5vw, -3.5vw);
+	}
+  50% {
+    transform: translate(13vw, -4vw);
+
+  }
+	60% {
+	  transform: translate(12vw, -4.3vw);
+	
+	}
+	
+  75% {
+    transform: translate(9vw, -4.2w);
+		z-index:0;
+  }
+	
+	82%{
+		  transform: translate(6.5vw, -4.3vw);
+		  	z-index:0;
+	}
+	90%{
+		transform: translate(3vw, -3.5vw);
+			z-index:0;
+	}
+}
+ */

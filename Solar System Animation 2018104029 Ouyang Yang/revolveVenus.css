@@ -1,0 +1,84 @@
+#Venus{
+		background:url(img/Venus.jpg) repeat-x 0 0;
+		background-size:200%;
+		position:absolute;
+	width:2.6vw;
+	height:2.6vw;
+		z-index:200;
+		border:0.5px solid rgba(26,18,101,0.3);
+		border-radius: 100%;
+		box-shadow:-8px 0 25px rgba(256,256,256,0.3),-1px -2px 
+		14px rgba(256,256,256,0.5) inset;
+		
+		animation: 
+	  	nudge2 600s linear infinite ,
+		animXVenus 3s cubic-bezier(0.36,0,0.64,1) -1.5s infinite alternate, animYVenus 3s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+}
+
+#lopp2 {
+	width: 17.5vw;
+	height:7vw;
+	border:0.2vw dashed #999;
+border-width:  0 0.2vw  0.2vw 0.2vw;
+	z-index: 100;
+	border-radius: 50%;
+	position: absolute;
+	left: 41.25vw;
+	top: 19vw;
+}
+
+@keyframes animXVenus{
+	 0% {left: 57.45vw;}
+	 100% {left: 39.95vw;}
+	
+}
+@keyframes animYVenus{
+	  0% {top: 17.7vw;z-index: 0;
+	  }
+	100% {top: 24.7vw;height: 2.8vw;
+	 width: 2.8vw;}
+}
+
+
+ 
+
+/* 
+@keyframes revolveVenus{
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes revolveVenus{
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+	5%{
+		 transform: translate(2.25vw, 1.5vw);
+	}
+  25% {
+    transform: translate(12vw, 0);
+  }
+	40%{
+		 transform: translate(18.75vw, -6vw);
+	}
+  50% {
+    transform: translate(19.5vw, -6.7vw);
+
+  }
+	60% {
+	  transform: translate(18vw, -8vw);
+	z-index:0;
+	}
+	
+  75% {
+    transform: translate(13.5vw, -7.8w);
+  }
+	
+	82%{
+		  transform: translate(9.75vw, -7.4vw);
+	}
+	90%{
+		transform: translate(4.5vw, -6.25vw);
+	}
+}
+ */
